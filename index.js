@@ -7,11 +7,7 @@ const RIGHT_ARROW = 39 // use e.which!
 const ROCKS = []
 const START = document.getElementById('start')
  var gameInterval = null
- /**
- * Be aware of what's above this line,
- * but all of your work should happen below.
- */
-var gameInterval = null
+ 
  function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
@@ -78,6 +74,7 @@ function endGame() {
    document.removeEventListener('keydown', moveDodger)
    return alert('YOU LOSE!')
 }
+
  function moveDodger(e) {
 
   const code = e.which
