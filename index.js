@@ -40,7 +40,6 @@ var gameInterval = null
   rock.style.left = `${x}px`
    // Hmmm, why would we have used `var` here?
   var top = rock.style.top = 0
-   rock.style.to
   GAME.appendChild(rock)
    /**
    * Now that we have a rock, we'll need to append
