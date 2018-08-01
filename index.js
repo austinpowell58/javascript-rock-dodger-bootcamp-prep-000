@@ -50,8 +50,6 @@ const START = document.getElementById('start')
       rock.remove()
     }
   }
-   }
-  }
   window.requestAnimationFrame(moveRock)
 
   ROCKS.push(rock)
