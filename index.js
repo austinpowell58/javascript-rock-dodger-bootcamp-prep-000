@@ -52,7 +52,6 @@ const START = document.getElementById('start')
   }
    }
   }
-   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveRock)
 
   ROCKS.push(rock)
