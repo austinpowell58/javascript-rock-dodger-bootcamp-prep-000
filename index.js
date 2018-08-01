@@ -26,8 +26,6 @@ var gameInterval = null
      const dodgerRightEdge = dodgerLeftEdge + 40;
     const rockLeftEdge = positionToInteger(rock.style.left)
     const rockRightEdge = rockLeftEdge + 20;
-   
-
     return (
       (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ||
       (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ||
@@ -41,9 +39,8 @@ var gameInterval = null
   rock.className = 'rock'
   rock.style.left = `${x}px`
    // Hmmm, why would we have used `var` here?
-  var top = 0
   var top = rock.style.top = 0
-   rock.style.top = top
+   rock.style.to
   GAME.appendChild(rock)
    /**
    * Now that we have a rock, we'll need to append
@@ -110,11 +107,6 @@ function endGame() {
   }
 }
  function moveDodgerLeft() {
-  // implement me!
-  /**
-   * This function should move DODGER to the left
-   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
-   */
   window.requestAnimationFrame(function() {
     const left = positionToInteger(DODGER.style.left)
      if (left > 0) {
@@ -143,5 +135,5 @@ function positionToInteger(p) {
   window.addEventListener('keydown', moveDodger)
   document.addEventListener('keydown', moveDodger)
    START.style.display = 'none'
- }   
+ } 
    
